@@ -1,5 +1,84 @@
 <?php
 
+// class Conta 
+// {
+//     var $name;
+//     var $number;
+
+//     public function setNumber(String $number)
+//     {
+//         $this->number = $number;
+//     }
+    
+//     public function getNumber() 
+//     {
+//         return $this->$number;
+//     }
+//     public function setName(String $name)
+//     {
+//         $this->name = $name;
+//     }
+// }
+
+// class ContaPF extends Conta
+// {
+//     var $cpf;
+
+//     public function setCpf(String $cpf)
+//     {
+//         $this->cpf = $cpf;
+//     }
+    
+//     public function getCpf() 
+//     {
+//         return $this->$cpf;
+//     }
+
+//     public function get()
+//     {
+//         return "Nome: {$this->name} | Conta: {$this->number} | CPF: {$this->cpf} <hr>";
+//     }
+// }
+
+// class ContaPJ extends Conta
+// {
+
+//     var $cnpj;
+
+//     public function setCnpj(String $cnpj)
+//     {
+//         $this->cnpj = $cnpj;
+//     }
+    
+//     public function getCnpj() 
+//     {
+//         return $this->$cnpj;
+//     }
+
+//     public function get()
+//     {
+//         return "Nome: {$this->name} | Conta: {$this->number} | CNPJ: {$this->cnpj} <hr>";
+//     }
+// }
+
+// echo "<pre>";
+// $sidy = new ContaPF;
+
+// $sidy->setName('Sidgley Guedes');
+// $sidy->setNumber('123456');
+// $sidy->setCpf('08413496900');
+
+// echo $sidy->get();
+
+// $econet = new ContaPJ;
+
+// $econet->setName('Econet');
+// $econet->setNumber('654121');
+// $econet->setCnpj('1242544000.1/14');
+
+// echo $econet->get();
+
+
 // abstract class Conta
 // {
 //     var $name;
@@ -303,5 +382,91 @@
 // $carlos->setEndereco('Rua Chile', 'Centro');
 
 // echo 'Nome: '.$carlos->name. $carlos->getEndereco();
+
+
+
+// class MyClass
+// {
+//     private $name; 
+//     private $cpf;
+
+//     public function __set($key, $value)
+//     {
+//         $this->$key = $value;
+//     }
+//     public function __get($key)
+//     {
+//         return $this->$key;
+//     }
+// }
+
+
+
+
+
+// $obj = new MyClass;
+
+// $obj->name = 'Sidu';
+
+// echo $obj->name;
+
+// class Str 
+// {
+//     public function __call($name, $arguments)
+//     {
+//         return strtoupper($arguments[0]);
+//     }
+
+//     static public function __callStatic($name, $arguments)
+//     {
+//         return strtoupper($arguments[0]);
+//     }
+
+//     public function __toString()
+//     {
+//         return '__toString';
+//     }
+// }
+
+// $obj = new Str;
+
+// echo "<pre>";
+// echo $obj->upper('Valor');
+// echo "<hr>";
+// echo Str::upper('Value');
+// echo "<hr>";
+// echo $obj;
+
+// class myClass 
+// {
+
+//     public $name;
+//     public $email;
+
+//     public function method1() : void 
+//     {
+
+//     }
+//     protected function method2() : void 
+//     {
+        
+//     }
+//     private function method3() : void 
+//     {
+        
+//     }
+
+// }
+
+// $obj = new MyClass;
+// $methods = get_class_methods($obj);
+// echo "<br>";
+// $vars = get_class_vars('MyClass');
+
+//$vars = get_object_vars($obj);
+
+//var_dump($vars);
+
+
 
 
